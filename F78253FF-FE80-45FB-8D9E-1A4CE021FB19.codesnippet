@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cctextfield</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - UITextFieldDelegate
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChangeText) name:UITextFieldTextDidChangeNotification object:nil];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    return YES;
+}
+
+- (void) textFieldDidChangeText {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F78253FF-FE80-45FB-8D9E-1A4CE021FB19</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>uitextfield的常用回调</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UITextFieldDelegate</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

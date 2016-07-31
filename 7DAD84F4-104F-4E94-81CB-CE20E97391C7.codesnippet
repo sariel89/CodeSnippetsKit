@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ccaddnotification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(&lt;#处理方法#&gt;) name:&lt;#通知名称#&gt; object:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7DAD84F4-104F-4E94-81CB-CE20E97391C7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>本类中添加通知</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>添加通知</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
