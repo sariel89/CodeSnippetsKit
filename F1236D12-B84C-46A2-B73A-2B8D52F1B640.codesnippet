@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ccsingletionparttern</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// =================================================================
+// ========================= Singleton Pattern =====================
+// =================================================================
+#pragma mark - Singleton Pattern
+static &lt;#type#&gt; *_sharedInstance = nil;
+
++ (instancetype)shareInstance {
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        _sharedInstance = [[self alloc] init];
+    });
+    return _sharedInstance;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    return [&lt;#type#&gt; shareInstance];
+}
+
+- (id)copy {
+    return [&lt;#type#&gt; shareInstance];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F1236D12-B84C-46A2-B73A-2B8D52F1B640</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC - 单例模式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Singleton Pattern</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
