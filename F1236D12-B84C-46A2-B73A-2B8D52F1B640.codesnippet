@@ -13,9 +13,8 @@
 // ========================= Singleton Pattern =====================
 // =================================================================
 #pragma mark - Singleton Pattern
-static &lt;#type#&gt; *_sharedInstance = nil;
-
 + (instancetype)shareInstance {
+    static &lt;#type#&gt; *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&amp;onceToken, ^{
         _sharedInstance = [[self alloc] init];

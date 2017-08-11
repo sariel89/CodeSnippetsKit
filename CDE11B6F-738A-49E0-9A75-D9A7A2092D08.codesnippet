@@ -6,13 +6,13 @@
 	<string>ccmark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>// ================================================================================
 // ========================= &lt;#name#&gt; =====================
 // ================================================================================
-#pragma mark - &lt;#name#&gt;</string>
+#pragma mark - &lt;&lt;#name#&gt;&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>CDE11B6F-738A-49E0-9A75-D9A7A2092D08</string>
 	<key>IDECodeSnippetLanguage</key>
