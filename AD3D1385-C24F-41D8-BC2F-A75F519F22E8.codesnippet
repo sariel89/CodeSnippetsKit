@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ccyitfacaderunjob</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>__weak typeof(self) weakself = self;
+[self facadeRunJob:^{
+    [weakself.sessionMgr makePostRequest:^(YITHTTPRequestConfig *_Nonnull config) {
+        &lt;#code#&gt;
+    } success:^(id _Nullable response, YITHTTPRequestCacheType cacheType) {
+        &lt;#code#&gt;
+    } failure:^(id _Nullable response, NSException *_Nullable exception) {
+        &lt;#code#&gt;
+    }];
+} failure:^(NSError *error) {
+    weakself.error = error;
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AD3D1385-C24F-41D8-BC2F-A75F519F22E8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YIT Facade Run Job</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
